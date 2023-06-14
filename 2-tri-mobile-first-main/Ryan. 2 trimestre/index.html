@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu pe
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}rfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" p
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal:
+    --azul: #002F52;
+    --fonte-secundario: 
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}laceholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/ApacheKafka.svg"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/Liderança.svg"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/Javascript.svg"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/Angular.svg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/ApacheKafka.svg"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/Liderança.svg"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/Javascript.svg"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Autor do Mês</h3>
+                        <h2 class="descrição__titulo-livro">Carlinhos</h2>
+                        <p class="descrição__texto">Maior autor de Equinos do mundo, vencedor de mais de 2050 records mundiais.
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="data:image/jpeg;base64,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" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Android</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Marketing Digital</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Agile</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Startups</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">HTML e CSS</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Python</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">OO</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Java</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Grupo Alura</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação</li>
+            <li class="lista-rodapé__item">
+                <img src="img/CasaDoCodigo.svg" alt="Logo da casa do código">
+                <a href="#" class="lista-rodapé__link">Casa do código</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Caelum.svg" alt="Logo da caelum">
+                <a href="#" class="lista-rodapé__link">Caelum</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação online</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Alura.svg" alt="Logo da Alura">
+                <a href="#" class="lista-rodapé__link">Alura</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
+                <a href="#" class="lista-rodapé__link">Alura para Empresas</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam">
+                <a href="#" class="lista-rodapé__link">Alura LATAM</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraStart.svg" alt="Logo da Alura START">
+                <a href="#" class="lista-rodapé__link">Alura Start</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/MusicDot.svg" alt="Logo da Music Dot">
+                <a href="#" class="lista-rodapé__link">Music Dot</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua">
+                <a href="#" class="lista-rodapé__link">Alura Lingua</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/PM3.svg" alt="Logo da PM3">
+                <a href="#" class="lista-rodapé__link">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Comunidade</li>
+            <li class="lista-rodapé__item">
+                <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech">
+                <a href="#" class="lista-rodapé__link">Hipsters ponto Tech</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev">
+                <a href="#" class="lista-rodapé__link">Scuba Dev</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech">
+                <a href="#" class="lista-rodapé__link">Layers ponto Tech</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/LikeABoss.svg" alt="Logo do Like a Boss">
+                <a href="#" class="lista-rodapé__link">Like a Boss</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras">
+                <a href="#" class="lista-rodapé__link">Carreira sem fronteiras</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs">
+                <a href="#" class="lista-rodapé__link">Hipsters ponto jobs</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/GUJ.svg" alt="Logo do GUJ">
+                <a href="#" class="lista-rodapé__link">GUJ</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
